@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Личный кабинет</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid overcover">
+        <button class = "backbtn" onclick=goBack()><i class="fas fa-arrow-left"></i>Back</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+        <div class="container profile-box">
+           <div class="cover-image row">
+               <img src="assets/images/bloogs-6.jpg" alt="">
+           </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-7 detail-px no-padding">
+                    <h3>Profile</h3>
+                    <p>My name is Issabek Dias. I am a mathematics teacher. I am a Nazarbayev University student. I have 5 years of experience in this field...</p>
+                    
+                    <h3 class="mth3">Working schedule</h3>
+                    <table class="schedule">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>9 AM - 11 AM</th>
+                                <th>11 AM - 1 PM</th>
+                                <th>2 PM - 4 PM</th>
+                                <th>4 PM - 6 PM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="available">Available</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td class="available">Available</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="unavailable">Unavailable</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="available">Available</td>
+                                <td class="available">Available</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                                <td class="available">Available</td>
+                                <td class="unavailable">Unavailable</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3 class="mth3">Manage courses</h3>
+
+                    <p>Accept new students</p>
+                    <label>
+                        <input type="checkbox" class="slider-checkbox">
+                        <span class="slider-label"></span>
+                    </label>
+
+                    <h3 class="mth3">Salary information</h3>
+                    <table class = "salary">
+                        <thead>
+                            <tr>
+                                <th>Salary amount/ hour</th>
+                                <th>Requisites</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5000tg</td>
+                                 <td>4400 4301 1133 8445</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onclick="openModal()">Show payment history</button>
+
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <table class = "history">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>March</td>
+                                        <td> 5000 tg </td>
+                                    </tr>
+                                    <tr>
+                                        <td>April</td>
+                                        <td> 5000 tg </td>
+                                    </tr>
+                                    <tr>
+                                        <td>May</td>
+                                        <td> 5000 tg </td>
+                                    </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <script>
+                        function openModal() {
+                            document.getElementById("myModal").style.display = "block";
+                        }
+
+                        function closeModal() {
+                            document.getElementById("myModal").style.display = "none";
+                        }
+
+                        // Close the modal when clicking outside of it
+                        window.onclick = function(event) {
+                            const modal = document.getElementById("myModal");
+                            if (event.target === modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+
+                    <h3 class="mth3">Account settings</h3>
+                    <button>Change password</button>
+                    <button>Edit profile information</button>
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 leftgh">
+                    <div class="img-box">
+                         <img src="img/team-1.jpg" alt="">
+                    </div>
+                    <div class="name-det">
+                        
+                   
+                     <h2>Issabek Dias</h2>
+                     
+                     <h3>Contact</h3>
+                     
+                     <p>Issabek Dias <br>
+                     +44 5342 3433</p>
+                     
+                     <p>53 Kabanbay batyr st. <br>
+                     Astana, Kazakhstan</p>
+                     
+                     <p>issabek.dias@xenone.com</p>
+                     
+                     <h3>Social Media</h3>
+                     
+                     <p>fb.com/diasissabek</p>
+                     <p>twitter@diasissabek</p>
+                     <p>instagram@totsamyidias</p>
+                     <p>pintrest@diasissabek</p>
+                   
+                     
+                     
+                      <h3>Courses</h3>
+                      
+                      <ul class="hoby row no-margin">
+                            <li><i class="fas fa-pencil-alt"></i> <br> Math  </li>
+                            <li><i class="fas fa-code"></i> <br> CS </li>
+                            <li><i class="fas fa-robot"></i> <br>  Machine learning  </li>
+                        </ul>
+                        
+                    </div>
+                    
+                   
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+</html>
